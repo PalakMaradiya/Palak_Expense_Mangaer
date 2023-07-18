@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.calanderActivity">
+
+
+    <!--text view for displaying the selected date-->
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="Current Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+
+    <CalendarView
+        android:id="@+id/Calenderview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
