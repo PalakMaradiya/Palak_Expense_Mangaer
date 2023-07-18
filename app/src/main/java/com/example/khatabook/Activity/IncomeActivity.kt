@@ -117,7 +117,7 @@ class IncomeActivity : AppCompatActivity() {
                 c= Categorylist[position].Category
 
 
-                Toast.makeText(this@IncomeActivity, "You Select : " +c , Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@IncomeActivity, "You Select : " +c , Toast.LENGTH_SHORT).show()
 
 
             }
@@ -138,7 +138,7 @@ class IncomeActivity : AppCompatActivity() {
                 m= Modelist[position].name
 
 
-                Toast.makeText(this@IncomeActivity, "You Select : " +m , Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@IncomeActivity, "You Select : " +m , Toast.LENGTH_SHORT).show()
 
 
             }

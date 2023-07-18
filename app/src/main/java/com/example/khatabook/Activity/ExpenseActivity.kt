@@ -122,7 +122,7 @@ class ExpenseActivity : AppCompatActivity() {
                 c= Categorylist[position].Category
 
 
-                Toast.makeText(this@ExpenseActivity, "You Select : " +c , Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@ExpenseActivity, "You Select : " +c , Toast.LENGTH_SHORT).show()
 
 
             }
@@ -144,7 +144,7 @@ class ExpenseActivity : AppCompatActivity() {
                 m= Modelist[position].name
 
 
-                Toast.makeText(this@ExpenseActivity, "You Select : " +m , Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@ExpenseActivity, "You Select : " +m , Toast.LENGTH_SHORT).show()
 
 
             }

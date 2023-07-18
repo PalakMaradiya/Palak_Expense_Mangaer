@@ -59,22 +59,18 @@ class HomeScreenActivity : AppCompatActivity() {
                 R.id.shareApp -> {
 
 
-
-
-
-
-
-                    val intent= Intent()
-                    intent.action=Intent.ACTION_SEND
-                    intent.putExtra(Intent.EXTRA_TEXT,"Hey Check out this Great app:"+ "https://play.google.com/store/apps/details?id=com.freeman.moneymanager")
-                    intent.type="text/plain"
-                    startActivity(Intent.createChooser(intent,"Share To:"))
+                    val intent = Intent()
+                    intent.action = Intent.ACTION_SEND
+                    intent.putExtra(
+                        Intent.EXTRA_TEXT,
+                        "Hey Check out this Great app:" + "https://play.google.com/store/apps/details?id=com.freeman.moneymanager"
+                    )
+                    intent.type = "text/plain"
+                    startActivity(Intent.createChooser(intent, "Share To:"))
                 }
 
 
-                R.id.termsofservice ->
-                {
-
+                R.id.termsofservice -> {
 
 
                     val openurl = Intent(Intent.ACTION_VIEW)
@@ -84,9 +80,7 @@ class HomeScreenActivity : AppCompatActivity() {
 
                 }
 
-                R.id.feedback ->
-                {
-
+                R.id.feedback -> {
 
 
 //                    val intent = Intent(Intent.ACTION_SEND)
@@ -97,20 +91,20 @@ class HomeScreenActivity : AppCompatActivity() {
 //                    startActivity(Intent.createChooser(intent, "Send Email"))
 
 
-
 //                    for open direct email
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" ))
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("mailto:"))
                     intent.putExtra(Intent.EXTRA_SUBJECT, "For FeedBack ")
                     intent.putExtra(Intent.EXTRA_TEXT, "Share your Feedback About your Experience ")
                     startActivity(intent)
 
 
-            }
+                }
 
 
-
-
-
+                R.id.Loack -> {
+                    val intent = Intent(this, FingerPrintActivity::class.java)
+                    startActivity(intent)
+                }
             }
             true
 
@@ -155,17 +149,13 @@ class HomeScreenActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-
-
         binding.cardviewAddTransation.setOnClickListener {
-
             val i = Intent(this@HomeScreenActivity, AllTranasationActivity::class.java)
             startActivity(i)
         }
 
 
     }
-
 
 
 }

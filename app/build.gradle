@@ -72,4 +72,8 @@ dependencies {
     // Matrial text input
     implementation 'com.google.android.material:material:1.1.0-alpha09'
 
+
+    // Kotlin
+    implementation("androidx.biometric:biometric:1.2.0-alpha05")
+
 }
